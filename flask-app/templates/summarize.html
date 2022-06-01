@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>Results</h2>
+
+<table>
+    
+    <tr>
+        <th>Date Published</th>
+        <th>Date Updated</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Regions</th>
+        <th>Summarized Contents</th>
+        <th>Link</th>    
+    </tr>
+    {% for index,row in result.iterrows() %}
+        <tr>
+            <td> {{row["Date Published"]}} </td>
+            <td> {{row["Date Updated"]}} </td>
+            <td> {{row["Title"]}} </td>
+            <td> {{row["Author"]}} </td>
+            <td> {{row["Regions"]}} </td>
+            <td> {{row["Summarized Contents"]}} </td>
+            <td> {{row["Link"]}} </td>
+        </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
