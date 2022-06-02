@@ -33,9 +33,10 @@ source env/bin/activate
 Other libraries:
 
 3. Flask
-4. Beautiful Soup
-5. Pandas 
-6. Numpy
+4. Requests
+5. Beautiful Soup
+6. Pandas 
+7. Numpy
 
 ## How it works
 Provide article url(s) in the text box and click on submit. Multiple urls should be separated by a comma.
